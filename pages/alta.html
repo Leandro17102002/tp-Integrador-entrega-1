@@ -6,7 +6,6 @@
 
   <title>Alta de productos</title>
 
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,30 +13,30 @@
     rel="stylesheet"
   />
 
-  <!-- CSS principal -->
+
   <link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
-  <!-- ================= HEADER ================= -->
-<header class="header">
-    <div class="header__container">
-        <h1 class="header__brand">
-            <a href="index.html" class="header__logo">
-                <img src="../assets/logo.png" alt="Logo de Juguetería Cósmica" class="header__logo-image">
-            </a>
-        </h1>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__brand">
+                <a href="../index.html" class="header__logo">
+                    <img src="../assets/logo.png" alt="Logo de Juguetería Cósmica" class="header__logo-image">
+                </a>
+            </h1>
 
-        <nav class="nav" aria-label="Navegación principal">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
-                <li class="nav__item"><a href="pages/alta.html" class="nav__link">Alta</a></li>
-                <li class="nav__item"><a href="pages/contacto.html" class="nav__link">Contacto</a></li>
-                <li class="nav__item"><a href="pages/nosotros.html" class="nav__link">Nosotros</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="alta.html" class="nav__link">Alta</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
   <!-- ================= MAIN ================= -->
   <main class="main main--form">
@@ -45,7 +44,7 @@
 
       <h2 class="form-page__title">Alta de producto</h2>
 
-      <form class="product-form" id="productForm" novalidate>
+      <form class="product-form" id="productForm" >
 
         <!-- Nombre -->
         <div class="form-group">
@@ -138,7 +137,7 @@
     </section>
   </main>
 
-
+  <script src="../js/product-form.js"></script>
   <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p class="footer__text">

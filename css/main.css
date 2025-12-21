@@ -354,4 +354,56 @@ input[type=file] {
   text-align: center;
 }
 
+/* ABSTRACTS */
+.main {
+  background-image: url("../assets/alta-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.contact__text {
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #111827;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contact-form .form-group label {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #dddddd;
+  background-color: transparent;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=main.css.map */

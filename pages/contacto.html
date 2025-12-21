@@ -8,30 +8,58 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="header__container">
-        <a href="../index.html" class="header__logo">
-            Juguetería Cósmica
-        </a>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__brand">
+                <a href="../index.html" class="header__logo">
+                    <img src="../assets/logo.png" alt="Logo de Juguetería Cósmica" class="header__logo-image">
+                </a>
+            </h1>
 
-        <nav class="nav" aria-label="Navegación principal">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
-                <li class="nav__item"><a href="alta.html" class="nav__link">Alta</a></li>
-                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
-                <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="alta.html" class="nav__link">Alta</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main class="main">
-    <h1>Contacto</h1>
+    <main class="main main--contact">
+    <section class="contact">
+      <form class="contact-form" id="contact-form">
+        <h2 class="contact__title">Contacto</h2>
+        <p class="contact__text">
+            ¿Tenés alguna consulta? Escribinos y te respondemos a la brevedad.
+        </p>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" required>
+        </div>
 
-    <section class="product-form">
-        <!-- Formulario en la siguiente etapa -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Asunto</label>
+          <input type="text" id="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          Enviar mensaje
+        </button>
+      </form>
     </section>
-</main>
+  </main>
 
 <footer class="footer">
     <p class="footer__text">

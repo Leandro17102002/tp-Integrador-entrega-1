@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as v;
+
+.main{
+    background-image: url("../assets/alta-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: v.$spacing-xl v.$spacing-md;
+  color: v.$color-light;
+  text-align: center;
+
+  &__title {
+    font-size: v.$font-size-xl;
+    margin-bottom: v.$spacing-sm;
+  }
+
+  &__text {
+    margin-bottom: v.$spacing-lg;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.contact-form {
+    margin-top: v.$spacing-lg;
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacing-md;
+  background-color: v.$color-surface;
+  padding: v.$spacing-lg;
+  border-radius: v.$radius-md;
+  box-shadow: v.$shadow-md;
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    label {
+      margin-bottom: v.$spacing-xs;
+      font-size: v.$font-size-sm;
+    }
+
+    input,
+    textarea {
+      padding: v.$spacing-sm;
+      border-radius: v.$radius-sm;
+      border: 1px solid v.$color-gray;
+      background-color: transparent;
+      color: v.$color-light;
+    }
+  }
+}
