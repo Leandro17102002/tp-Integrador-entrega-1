@@ -1,0 +1,82 @@
+@use '../abstracts/variables' as v;
+
+.product-card {
+  background-color: v.$card-bg;
+  color: v.$card-text;
+  border-radius: v.$radius-md;
+  box-shadow: v.$shadow-md;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 
+    transform v.$transition-base,
+    box-shadow v.$transition-base,
+    background-color v.$transition-base;
+}
+
+.product-card__image {
+  width: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+.product-card__content {
+  padding: v.$spacing-md;
+
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacing-sm;
+}
+
+.product-card__title {
+  font-family: v.$font-secondary;
+  font-size: v.$font-size-md;
+  font-weight: 600;
+}
+
+.product-card__price {
+  font-size: v.$font-size-md;
+  font-weight: 700;
+  color: v.$color-secondary;
+}
+
+.product-card__description {
+  font-size: v.$font-size-sm;
+  color: v.$color-text-muted;
+  line-height: 1.4;
+}
+
+.product-card__link {
+  margin-top: auto;
+  align-self: flex-start;
+
+  font-size: v.$font-size-sm;
+  font-weight: 600;
+  color: v.$color-primary;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width v.$transition-fast;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: v.$shadow-lg;
+  background-color: v.$card-bg-hover;
+}
+

@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as v;
+
+.form-group--checkbox {
+  flex-direction: row;
+  align-items: center;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: v.$spacing-sm;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+input[type="file"] {
+  padding: v.$spacing-xs;
+  background-color: transparent;
+  border: none;
+  color: v.$color-light;
+}
+
+.product-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: v.$spacing-md;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacing-xs;
+}
+
+.form-group--full {
+  grid-column: 1 / -1;
+}
+

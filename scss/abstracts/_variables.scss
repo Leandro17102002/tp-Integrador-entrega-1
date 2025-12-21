@@ -1,0 +1,67 @@
+/* COLORS */
+$color-primary: #5b2be0; /* Color de accion principal. Cuando algo es importante, destaca o invita a interactuar */
+$color-secondary: #f9c74f; /* Color de apoyo. Cuando se quiere acompañar al primario, en hover, badges, detalles */
+$color-accent: #3a86ff;     // acento puntual /* Color de acento. Para llamados a la accion secundarios, links, botones secundarios */
+
+
+$color-background: #0b0f1a; // fondo general
+$color-surface: #111827;    // cards, header, panels
+$color-surface-alt: #1f2933; // hover / variantes
+
+
+$color-dark: #111111; /* Fondos oscuros estructurales. Header, footer, secciones que enmarcan */
+$color-light: #ffffff; /* Contraste sobre oscuro. Texto en header/footer, fondos limpios */
+
+$color-text-muted: rgba(255, 255, 255, 0.7);
+$color-text-inverse: $color-light;
+
+
+
+$color-gray: #dddddd; /* Separadores y limites. Borders, lineas, estados deshabilitados, divisiones visuales */
+$color-text: #333333; /* Texto normal. parrafos, descripciones, contenido largo */
+
+/* CARD TOKENS */
+$card-bg: $color-surface;
+$card-bg-hover: $color-surface-alt;
+$card-text: $color-light;
+$card-border: rgba(255, 255, 255, 0.05);
+
+
+/* RADIUS */
+$radius-sm: 0.375rem;   // 6px
+$radius-md: 0.75rem;    // 12px  (cards)
+$radius-lg: 1rem;       // 16px
+
+/* SHADOWS */
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+$shadow-md: 0 6px 16px rgba(0, 0, 0, 0.3); // cards
+$shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.4);
+
+/* TRANSITIONS */
+$transition-fast: 0.2s ease;
+$transition-base: 0.3s ease;
+
+
+/* SPACING */
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+
+/* TYPOGRAPHY */
+$font-primary: "Inter", system-ui, sans-serif;
+$font-secondary: "Poppins", system-ui, sans-serif;
+
+
+$font-size-base: 1rem;          // 16px
+$font-size-sm: 0.875rem;        // 14px
+$font-size-md: 1.125rem;        // 18px
+
+$font-size-lg: 1.5rem;          // 24px
+$font-size-xl: 2rem;            // 32px
+$font-size-xxl: 3rem;           // 48px
+
+
+$text-shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3);
+$text-shadow-strong: 0 2px 6px rgba(0, 0, 0, 0.6);

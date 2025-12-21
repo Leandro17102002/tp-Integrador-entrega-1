@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+
+.header{
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    color: v.$color-light;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+
+    &__container{
+        width: 100%;
+        display: flex;
+        padding: 0 v.$spacing-md;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__brand{
+        margin: 0;
+    }
+
+    &__logo-image{
+        height: 70px;
+        display: block;
+    }
+}

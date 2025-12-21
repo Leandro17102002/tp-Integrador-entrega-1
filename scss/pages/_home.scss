@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as v;
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero__background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero__title{
+  font-size: v.$font-size-xxl;
+  text-shadow: v.$text-shadow-strong;
+}
+
+.hero__description{
+  font-size: v.$font-size-lg;
+  margin-top: v.$spacing-md;
+  text-shadow: v.$text-shadow-soft;
+}
+
+.products {
+  padding: v.$spacing-lg 0;
+  background-color: burlywood;
+}
+
+.products__title {
+  text-align: center;
+  font-size: v.$font-size-xl;
+  margin-bottom: v.$spacing-lg;
+}
+
+.products__grid {
+  max-width: 80%;
+  margin: 0 auto;
+
+  display: grid;
+  gap: 2rem;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+}
+
+
+
