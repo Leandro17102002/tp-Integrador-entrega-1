@@ -1,0 +1,79 @@
+@use "../abstracts/variables" as v;
+
+.about {
+    background-image: url("../assets/nosotros-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: v.$spacing-xl v.$spacing-lg;
+    color: v.$color-light;
+    height: 100vh;
+
+  &__container {
+    max-width: 900px;
+    margin: v.$spacing-xl auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: v.$spacing-md;
+  }
+
+  &__title {
+    font-size: v.$font-size-xl;
+    font-family: v.$font-secondary;
+    margin-bottom: v.$spacing-md;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: v.$font-size-base;
+    line-height: 1.7;
+    margin-bottom: v.$spacing-md;
+    color: v.$color-light;
+  }
+}
+
+.values {
+  padding: v.$spacing-xl v.$spacing-lg;
+  background-color: v.$color-surface;
+  color: v.$color-light;
+
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: v.$font-size-lg;
+    font-family: v.$font-secondary;
+    margin-bottom: v.$spacing-md;
+  }
+
+  &__text {
+    max-width: 700px;
+    margin: 0 auto v.$spacing-lg;
+    line-height: 1.6;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: v.$spacing-md;
+  }
+
+  &__item {
+    background-color: v.$color-surface-alt;
+    padding: v.$spacing-md;
+    border-radius: v.$radius-md;
+    box-shadow: v.$shadow-sm;
+    font-size: v.$font-size-md;
+  }
+}

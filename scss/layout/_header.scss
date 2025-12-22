@@ -8,6 +8,7 @@
     width: 100%;
     position: fixed;
     z-index: 1000;
+    
 
     &__container{
         width: 100%;
@@ -24,5 +25,39 @@
     &__logo-image{
         height: 70px;
         display: block;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__search-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    &__search-input {
+        background-color: v.$color-surface-alt;
+        border: 1px solid v.$card-border;
+        border-radius: v.$radius-md;
+        padding: v.$spacing-sm v.$spacing-md;
+        color: v.$color-light;
+        font-size: v.$font-size-sm;
+        min-width: 220px;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &:focus {
+            outline: none;
+            border-color: v.$color-primary;
+            box-shadow: 0 0 0 2px rgba(91, 43, 224, 0.3);
+        }
     }
 }

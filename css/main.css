@@ -1,12 +1,5 @@
-@charset "UTF-8";
 /* ABSTRACTS */
 /* COLORS */
-/* Color de accion principal. Cuando algo es importante, destaca o invita a interactuar */
-/* Color de apoyo. Cuando se quiere acompañar al primario, en hover, badges, detalles */
-/* Fondos oscuros estructurales. Header, footer, secciones que enmarcan */
-/* Contraste sobre oscuro. Texto en header/footer, fondos limpios */
-/* Separadores y limites. Borders, lineas, estados deshabilitados, divisiones visuales */
-/* Texto normal. parrafos, descripciones, contenido largo */
 /* CARD TOKENS */
 /* RADIUS */
 /* SHADOWS */
@@ -115,6 +108,35 @@ h6 {
 .header__logo-image {
   height: 70px;
   display: block;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header__search-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.header__search-input {
+  background-color: #1f2933;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  min-width: 220px;
+}
+.header__search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.header__search-input:focus {
+  outline: none;
+  border-color: #5b2be0;
+  box-shadow: 0 0 0 2px rgba(91, 43, 224, 0.3);
 }
 
 /* ABSTRACTS */
@@ -355,8 +377,8 @@ input[type=file] {
 }
 
 /* ABSTRACTS */
-.main {
-  background-image: url("../assets/alta-background.png");
+.main--contact {
+  background-image: url("../assets/contacto-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -404,6 +426,76 @@ input[type=file] {
   border: 1px solid #dddddd;
   background-color: transparent;
   color: #ffffff;
+}
+
+/* ABSTRACTS */
+.about {
+  background-image: url("../assets/nosotros-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  color: #ffffff;
+  height: 100vh;
+}
+.about__container {
+  max-width: 900px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.about__title {
+  font-size: 2rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.about__text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.values {
+  padding: 4rem 2rem;
+  background-color: #111827;
+  color: #ffffff;
+}
+.values__container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.values__title {
+  font-size: 1.5rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  margin-bottom: 1rem;
+}
+.values__text {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+.values__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.values__item {
+  background-color: #1f2933;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=main.css.map */

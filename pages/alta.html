@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Alta de productos</title>
+  <title>Alta de productos | Juguetería Cósmica</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +26,17 @@
                     <img src="../assets/logo.png" alt="Logo de Juguetería Cósmica" class="header__logo-image">
                 </a>
             </h1>
+
+            <form class="header__search" role="search">
+                <label for="search" class="header__search-label">Buscar productos</label>
+                <input
+                    type="search"
+                    id="search"
+                    name="search"
+                    class="header__search-input"
+                    placeholder="Buscar juguetes..."
+                >
+            </form>
 
             <nav class="nav" aria-label="Navegación principal">
                 <ul class="nav__list">
@@ -138,6 +149,7 @@
   </main>
 
   <script src="../js/product-form.js"></script>
+  
   <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p class="footer__text">

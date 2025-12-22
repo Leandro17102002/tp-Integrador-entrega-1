@@ -7,32 +7,44 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__brand">
+          <a href="../index.html" class="header__logo">
+            <img src="../assets/logo.png" alt="Logo de Juguetería Cósmica" class="header__logo-image">
+          </a>
+      </h1>
 
-    <header class="header">
-        <div class="header__container">
-            <h1 class="header__brand">
-                <a href="../index.html" class="header__logo">
-                    <img src="../assets/logo.png" alt="Logo de Juguetería Cósmica" class="header__logo-image">
-                </a>
-            </h1>
+      <form class="header__search" role="search">
+        <label for="search" class="header__search-label">Buscar productos</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          class="header__search-input"
+          placeholder="Buscar juguetes..."
+        >
+      </form>
 
-            <nav class="nav" aria-label="Navegación principal">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
-                    <li class="nav__item"><a href="alta.html" class="nav__link">Alta</a></li>
-                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
-                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="alta.html" class="nav__link">Alta</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+          <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        </ul>            
+      </nav>
+    </div>
+  </header>
 
-    <main class="main main--contact">
+  <!-- ================= MAIN ================= -->
+  <main class="main main--contact">
     <section class="contact">
       <form class="contact-form" id="contact-form">
         <h2 class="contact__title">Contacto</h2>
         <p class="contact__text">
-            ¿Tenés alguna consulta? Escribinos y te respondemos a la brevedad.
+          ¿Tenés alguna consulta? Escribinos y te respondemos a la brevedad.
         </p>
         <div class="form-group">
           <label for="name">Nombre</label>
@@ -61,12 +73,13 @@
     </section>
   </main>
 
-<footer class="footer">
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
     <p class="footer__text">
-        © 2025 Juguetería Cósmica
+      © 2025 Juguetería Cósmica. Todos los derechos reservados.
     </p>
-</footer>
+  </footer>
 
-<script src="../js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
