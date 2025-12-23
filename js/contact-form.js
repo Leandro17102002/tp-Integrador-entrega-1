@@ -40,7 +40,6 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // Si todo está OK
   console.log("Formulario válido:");
   console.log({
     nombre: nameInput.value,
