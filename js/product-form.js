@@ -1,7 +1,3 @@
-// ==============================
-// PRODUCT FORM VALIDATION
-// ==============================
-
 // Form
 const form = document.getElementById("productForm");
 
@@ -19,9 +15,6 @@ const ageToInput = document.getElementById("ageTo");
 const imageInput = document.getElementById("image");
 const products = [];
 
-// ==============================
-// HELPER FUNCTIONS
-// ==============================
 
 function isEmpty(value) {
   return value.trim() === "";
@@ -32,21 +25,14 @@ function isPositiveNumber(value) {
 }
 
 function showError(message) {
-  // Por ahora solo mostramos en consola
-  // Luego lo llevamos al DOM
   console.error(message);
 }
 
-// ==============================
-// FORM SUBMIT
-// ==============================
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   let hasErrors = false;
-
-  // ===== VALIDATIONS =====
 
   // Nombre
   if (isEmpty(nameInput.value)) {
@@ -117,14 +103,12 @@ form.addEventListener("submit", function (event) {
     hasErrors = true;
   }
 
-  // ===== FINAL CHECK =====
 
   if (hasErrors) {
     console.log("Formulario con errores");
     return;
   }
 
-  // ===== PRODUCT OBJECT =====
 
   const product = {
     name: nameInput.value.trim(),

@@ -77,3 +77,85 @@
     font-size: v.$font-size-md;
   }
 }
+
+@media (max-width: v.$bp-lg) {
+  .about {
+    padding: v.$spacing-xl v.$spacing-md;
+  }
+
+  .about__logo {
+    width: 240px;
+  }
+
+  .about__container {
+    margin: v.$spacing-lg auto;
+  }
+
+  .values {
+    padding: v.$spacing-xl v.$spacing-md;
+  }
+}
+
+@media (max-width: v.$bp-md) {
+  .about {
+    height: auto;
+    padding: v.$spacing-lg v.$spacing-md;
+  }
+
+  .about__logo {
+    width: 200px;
+  }
+
+  .about__title {
+    font-size: v.$font-size-lg;
+  }
+
+  .about__text {
+    font-size: v.$font-size-sm;
+    text-align: center;
+  }
+
+  .values__title {
+    font-size: v.$font-size-md;
+  }
+
+  .values__item {
+    font-size: v.$font-size-sm;
+  }
+}
+
+@media (max-width: v.$bp-sm) {
+  .about {
+    padding: v.$spacing-lg v.$spacing-sm;
+  }
+
+  .about__container {
+    margin: v.$spacing-md auto;
+  }
+
+  .about__logo {
+    width: 160px;
+    margin-bottom: v.$spacing-sm;
+  }
+
+  .about__title {
+    font-size: v.$font-size-md;
+  }
+
+  .about__text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .values {
+    padding: v.$spacing-lg v.$spacing-sm;
+  }
+
+  .values__list {
+    grid-template-columns: 1fr;
+  }
+
+  .values__item {
+    padding: v.$spacing-sm;
+  }
+}

@@ -80,3 +80,23 @@
   background-color: v.$card-bg-hover;
 }
 
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: v.$spacing-lg;
+}
+
+@media (max-width: v.$bp-sm) {
+  .product-card {
+    &__image {
+      width: 150px;
+      height: 150px;  
+      margin: 0 auto;
+    }
+
+    &__content {
+      padding: v.$spacing-md;
+    }
+  }
+}
+

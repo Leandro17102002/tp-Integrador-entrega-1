@@ -4,6 +4,7 @@
   min-height: calc(100vh - 120px); // empuja footer
   padding-top: 7rem; // header fixed
   padding-bottom: v.$spacing-xl;
+  width: 100%;
 
   display: flex;
   justify-content: center;
@@ -31,4 +32,20 @@
   font-size: v.$font-size-xl;
   color: v.$color-light;
   text-align: center;
+}
+
+@media (max-width: v.$bp-md){
+  .form-page{
+    width: 90%;
+  }
+}
+
+@media (max-width: v.$bp-sm){
+  
+  
+
+  .form-page {
+    padding: v.$spacing-lg;
+    width: 60%;
+  }
 }

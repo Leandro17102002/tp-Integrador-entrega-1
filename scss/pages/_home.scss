@@ -56,5 +56,25 @@
   );
 }
 
+@media (max-width: v.$bp-md) {
+  .hero__title {
+    font-size: v.$font-size-xl;
+  }
+
+  .hero__description {
+    font-size: v.$font-size-base;
+    padding: 0 v.$spacing-md;
+  }
+
+  .products__grid{
+    grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  );
+  }
+
+
+  
+}
 
 

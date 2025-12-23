@@ -1,11 +1,7 @@
 /* ABSTRACTS */
 @use "abstracts/variables";
-@use "abstracts/functions";
-@use "abstracts/mixins";
 
 /* BASE */
-@use "base/reset";
-@use "base/base";
 @use "base/normalize";
 @use "base/typography";
 

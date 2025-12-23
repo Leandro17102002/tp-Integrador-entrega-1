@@ -37,3 +37,21 @@
 
     }
 }
+
+@media (max-width: v.$bp-lg){
+    .nav__list{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: v.$bp-sm){
+
+    .nav__list{
+        gap: .3rem;
+        margin: 0;
+    }
+
+    .nav__link{
+        font-size: 10px;  
+    }
+}

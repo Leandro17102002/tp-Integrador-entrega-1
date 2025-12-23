@@ -1,63 +1,140 @@
 @use '../abstracts/variables' as v;
 
-.header{
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
+.header {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  color: v.$color-light;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 v.$spacing-lg;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: v.$spacing-md;
+  }
+
+  &__brand {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  &__logo-image {
+    height: 64px;
+    display: block;
+  }
+
+  &__search {
+    position: relative;
+    flex: 1;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__search-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__search-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
     color: v.$color-light;
-    height: 80px;
+    cursor: pointer;    
+   } 
+
+  &__search-input {
     width: 100%;
-    position: fixed;
-    z-index: 1000;
-    
+    background-color: v.$color-surface-alt;
+    border: 1px solid v.$card-border;
+    border-radius: v.$radius-md;
+    padding: v.$spacing-sm v.$spacing-md;
+    color: v.$color-light;
+    font-size: v.$font-size-sm;
 
-    &__container{
-        width: 100%;
-        display: flex;
-        padding: 0 v.$spacing-md;
-        align-items: center;
-        justify-content: space-between;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
     }
 
-    &__brand{
-        margin: 0;
+    &:focus {
+      outline: none;
+      border-color: v.$color-primary;
+      box-shadow: 0 0 0 2px rgba(91, 43, 224, 0.3);
     }
-
-    &__logo-image{
-        height: 70px;
-        display: block;
-    }
-
-    &__search {
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-
-    &__search-label {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-    }
-
-    &__search-input {
-        background-color: v.$color-surface-alt;
-        border: 1px solid v.$card-border;
-        border-radius: v.$radius-md;
-        padding: v.$spacing-sm v.$spacing-md;
-        color: v.$color-light;
-        font-size: v.$font-size-sm;
-        min-width: 220px;
-
-        &::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        &:focus {
-            outline: none;
-            border-color: v.$color-primary;
-            box-shadow: 0 0 0 2px rgba(91, 43, 224, 0.3);
-        }
-    }
+  }
 }
+
+
+@media (max-width: v.$bp-lg) {
+  .header__container {
+    padding: 0 v.$spacing-md;
+  }
+
+  .header__search {
+    max-width: 260px;
+  }
+
+  .header__logo-image {
+    height: 56px;
+  }
+}
+
+
+@media (max-width: v.$bp-md) {
+  .header {
+    height: auto;
+    padding: v.$spacing-sm 0;
+  }
+
+  .header__logo-image{
+    height: 48px;
+  }
+
+  .header__container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: v.$spacing-sm;
+  }
+
+  .header__brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__search {
+    max-width: 100%;
+  }
+
+  .header__search-input{
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .nav__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: v.$spacing-xs;
+  }
+
+  .nav__link {
+    padding: v.$spacing-xs v.$spacing-sm;
+    font-size: v.$font-size-sm;
+  }
+}
+
+
